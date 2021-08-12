@@ -14,7 +14,7 @@ classifier = load_model('EmotionDetectionModelv1.h5')
 
 class_labels=['Angry','Happy','Neutral','Sad','Surprise']
 
-cap=cv2.VideoCapture(0)
+cap=cv2.VideoCapture("video.mp4")
 
 while True:
     ret,frame=cap.read()
